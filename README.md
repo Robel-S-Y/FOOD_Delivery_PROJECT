@@ -81,7 +81,7 @@ FOOD Delivery PROJECT/
 3. **Environment configuration**
    Create a `.env` file in the root directory:
    ```env
-   PORT=3000
+   PORT=<port_number>
    DATABASE_URL=<your-postgresql-connection-string>
    JWT_SECRET=<your-jwt-secret-key>
    JWT_SECRET_REFRESH=<your-refresh-jwt-secret>
@@ -106,7 +106,7 @@ npm run dev
 npm start
 ```
 
-The API will be available at `http://localhost:3000`
+The API will be available at `http://localhost:2121`
 
 ## 📋 API Endpoints
 
@@ -175,7 +175,7 @@ npm run test:registeLoginPlaceOrder     # Full user journey tests
 
 - Ensure PostgreSQL and Redis (if using caching) are running before starting the application
 - The system uses SQLite for testing to simplify the testing environment
-- JWT tokens are set to expire after 1 hour (access) and 7 days (refresh) by default
+- JWT tokens are set to expire after 30 min (access) and 2 hours (refresh) by default
 - This project uses ECMAScript modules (ESM) format
 
 ## 🤝 Contributing
